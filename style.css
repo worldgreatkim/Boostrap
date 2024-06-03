@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #333;
+}
+
+.carousel {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    transition: all 1s ease;
+}
+
+input[name="radio-buttons"] {
+    display: none;
+}
+
+.slide {
+    width: 33.33%;
+    transition: all 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    position: relative;
+    z-index: 1;
+}
+
+.navigation .bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.navigation .bar:hover {
+    background: #fff;
+}
+
+#img-1:checked ~ .first {
+    margin-left: 0;
+}
+
+#img-2:checked ~ .first {
+    margin-left: -100%;
+}
+
+#img-3:checked ~ .first {
+    margin-left: -200%;
+}
+
+.first-img{
+   
+}

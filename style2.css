@@ -1,0 +1,9 @@
+.first-img {
+    width: 100vw;
+}
+
+.position{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 300px;
+}
